@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>School Sports Team Sign-Ups</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 40px 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        h1 {
+            margin-top: 0;
+            text-align: center;
+            letter-spacing: 0.5px;
+        }
+
+        .subtitle {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        thead {
+            background-color: #2c3e50;
+            color: #ffffff;
+        }
+
+        th, td {
+            padding: 12px 10px;
+            text-align: left;
+        }
+
+        th {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9fbfd;
+        }
+
+        tbody tr:hover {
+            background-color: #eef3f8;
+        }
+
+        .team-tag {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            background-color: #e3ecf5;
+            color: #2c3e50;
+        }
+
+        .footer-note {
+            margin-top: 20px;
+            font-size: 0.85rem;
+            color: #777;
+        }
+
+        @media (max-width: 700px) {
+            th, td {
+                font-size: 0.85rem;
+                padding: 8px;
+            }
+
+            h1 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>School Sports Team Sign-Up Log</h1>
+        <p class="subtitle">Use this table to record student registrations for sports teams.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Student Name</th>
+                    <th>Year Level</th>
+                    <th>Sport</th>
+                    <th>Team</th>
+                    <th>Contact Email</th>
+                    <th>Parent/Guardian Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01/03/2026</td>
+                    <td>Alex Nguyen</td>
+                    <td>Year 9</td>
+                    <td>Basketball</td>
+                    <td><span class="team-tag">Junior Boys</span></td>
+                    <td>alex.nguyen@email.com</td>
+                    <td>Mai Nguyen</td>
+                </tr>
+
+                <tr>
+                    <td>02/03/2026</td>
+                    <td>Jordan Smith</td>
+                    <td>Year 10</td>
+                    <td>Soccer</td>
+                    <td><span class="team-tag">Senior Mixed</span></td>
+                    <td>j.smith@email.com</td>
+                    <td>Chris Smith</td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="team-tag"></span></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="team-tag"></span></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="footer-note">
+            Tip: Duplicate empty rows as needed to add more sign-ups.
+        </p>
+    </div>
+</body>
+</html>
