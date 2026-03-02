@@ -1,0 +1,5 @@
+# Reflection
+- Kanban boards can help manage workflow and reduce overload by sorting tasks based on priority and providing visual representation to how tasks are progressing. They allow for easy comprehension of which tasks must be prioritised and which are blocking the progression of others' tasks
+- I actually already use a Kanban workflow for personal projects and my university study, through the database feature of Notion. This has helped immensely with my workflow over the last two years of use, as I find it invaluable to have a visual representation of tasks' progression as opposed to a vague and untracked to-do list
+
+- To improve task tracking in my role, I should maintain company standards when creating tasks for the duration of my internship. Particularly within games production roles, I have a tendency to slack off a bit with my upkeep of standards when creating tasks in Kanban boards, leaving out details such as priorities and time estimates. However, I will ensure that I follow all company standards when working in teams and make sure my tasks are clearly labelled and updated
