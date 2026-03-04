@@ -1,1 +1,5 @@
-Time to merge the two branches...
+# Reflection
+Wow, this is a reflection!
+
+Lets create a conflict!
+
