@@ -29,14 +29,9 @@ public class GameManager : MonoBehaviour
     public void LoadNextScene()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        int nextSceneIndex = currentSceneIndex + 1;
+        int nextSceneIndex = (currentSceneIndex + 1) % SceneManager.sceneCountInBuildSettings;
 
-        if (nextSceneIndex >= SceneManager.sceneCountInBuildSettings)
-        {
-            nextSceneIndex = 0;
-        }
-
-        SceneManager.LoadScene(nextSceneIndex);
+        SceneManager.LoadScene(nextSceneIndex, LoadSceneMode.Single);
         Debug.Log("New scene loaded. Current SceneType: " + currentSceneType);
     }
 }
