@@ -7,3 +7,12 @@ A well structured PR should include a clear description of what changes have bee
 
 ### What did you learn from reviewing an open-source PR?
 I saw just how complex things can get! In the teams I've worked within previously, there were only maybe 10 of us, and only 3 or 4 people using source control. In the open-source content I viewed, there were many people contriubuting and discussing changes in the open PR, which is not something I've experienced in my small project teams before. It was also good to read through some of their more detailed PR descriptions; having worked in games development, most of my PR descriptions and those from my teammates have been quite brief and unorganised, often including jokes or casual language. It was beneficial to see how a more professional PR description is structured, and the level of detail it includes. I think this is something I can improve on in my future PRs.
+
+### What makes a good commit message?
+A good commit message is clear and concise. It should cover the key things changed or worked on in that chunk of work, but not go into granular detail; people should be able to understand the general purpose of the commit in a few sentences. It should also make reference to any issue it addresses or milestones it contributes to.
+
+### How does a clear commit message help in team collaboration?
+A clear commit message is integral to team collaboration, as it makes sure your fellow developers can understand what work you've completed, and what still needs to be done. It makes it easier for others to pick up where you left off, and address any bugs you may have introduced. A clear commit message can also make tracing back the source of an issue much easier, as the person can read through messages rather than sifting through code to find where a change was made.
+
+### How can poor commit messages cause issues later?
+Poor commit messages make it difficult for others to collabroate effectively, and they may not know what features or bugs have been introduced by a commit. Particularly if the commit caused issues, it will be harder to trace back the source of the issue and find a fix if the person doing so has to read through code to understand where it was indtroduced. An effective commit message can save a lot of time by providing this information in a readable way, making collaborative work much more efficient.
