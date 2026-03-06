@@ -41,3 +41,7 @@ As stated in the issue content, the commands are as follows:
 
 ### What surprised you while testing these commands?
 I was overal surprised by how much control git actually offers you with these commands. I have only had limited experience with git, and I wasn't aware commands such as these existed. I wish I had known about them sooner - particularly cherry-pick and git bisect - as they would have been very useful in my previous projects; they would have saved so much time debugging and fixing issues.
+
+### Why is pushing directly to main problematic?
+### How do branches help with reviewing code?
+### What happens if two people edit the same file on different branches?
