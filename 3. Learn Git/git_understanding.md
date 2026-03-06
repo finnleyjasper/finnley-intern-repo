@@ -25,3 +25,19 @@ You would use git bisect after realising a bug has been introduced, but when you
 
 ### How does it compare to manually reviewing commit
 Git bisect is invaluable for fixing bugs, as it is extremely fast compared to manually reviewing each commit. It essentialy halves the number of possibilities and provides an efficient way to test a large number of commits without spending time manually switching to each one from where the bug was first noticed.
+
+### What does each command do?
+As stated in the issue content, the commands are as follows:
+- ```git checkout main -- <file>``` – Restore a specific file from main without affecting other changes.
+- ```git cherry-pick <commit>``` – Apply a specific commit from another branch without merging the whole branch.
+- ```git log``` – View commit history and understand how changes evolved.
+- ```git blame <file>``` – See who last modified each line in a file and when.
+
+### When would you use it in a real project (hint: these are all really important in long running projects with multiple developers)?
+- ``git checkout main -- <file>``` - This is useful when you want to discard changes to a specific file and restore it to the state it is in the main branch, without affecting other changes you may have made in your current branch. For example, if you make a signifigant mistake and what to start again without having to lose work on other files.
+- ```git cherry-pick <commit>``` - This command is very usful for applying small or critical fixes from individual commits, without having to merge your whole branch. For example, if someone working on a different branch made a fix to a bug with a recent commit, you can cherry-pick that commit to get the bugfix without merging your branch; particularly useful if you have not finished your work and it isn't ready to be merged, but you would benefit from the bugfix.
+- ```git log``` - This is useful for understanding the history of a project, and how changes have evolved over time.
+- ```git blame <file>``` - This is useful for tracking down who made a change to a file, and when. This can be helpful for understanding the context of a change, and for getting in contact with the person who made changes if you need to.
+
+### What surprised you while testing these commands?
+I was overal surprised by how much control git actually offers you with these commands. I have only had limited experience with git, and I wasn't aware commands such as these existed. I wish I had known about them sooner - particularly cherry-pick and git bisect - as they would have been very useful in my previous projects; they would have saved so much time debugging and fixing issues.
