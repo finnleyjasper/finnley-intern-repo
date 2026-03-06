@@ -43,5 +43,10 @@ As stated in the issue content, the commands are as follows:
 I was overal surprised by how much control git actually offers you with these commands. I have only had limited experience with git, and I wasn't aware commands such as these existed. I wish I had known about them sooner - particularly cherry-pick and git bisect - as they would have been very useful in my previous projects; they would have saved so much time debugging and fixing issues.
 
 ### Why is pushing directly to main problematic?
+Pushing directly into main can cause signifigant issues. If a feature introduces a bug or otherwise breaks the program, it will effect everyone else working on the project. Additionally, it makes it difficult to track changes and work on individual features. It also means merge conflicts are almost inevitable, as multiple people may be working on the same files and pushing changes to main without coordinating with each other.
+
 ### How do branches help with reviewing code?
+Branchs help with reviewing code by allowing you to safely make changes to the codebase without affecting the main branch. This makes reviewing code much easier as you can test and see changes in isolation and in a safe envrionemnt. It also allows for better collaboration, as multiple people can work on different branches without interfering with each other's work.
+
 ### What happens if two people edit the same file on different branches?
+If two people edit the same file on different branches, it can lead to merge conflicts when trying to merge those branches back into main. Git will not know which changes to keep and which to discard, and it will require manual intervention to resolve the conflict.
