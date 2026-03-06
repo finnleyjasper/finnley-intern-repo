@@ -50,3 +50,12 @@ Branchs help with reviewing code by allowing you to safely make changes to the c
 
 ### What happens if two people edit the same file on different branches?
 If two people edit the same file on different branches, it can lead to merge conflicts when trying to merge those branches back into main. Git will not know which changes to keep and which to discard, and it will require manual intervention to resolve the conflict.
+
+### What is the difference between staging and committing?
+The difference between staging and committing is that staging refers to selecting which changes you want to include in your next commit, while committing is the actual process of publishing those changes to the repository. Only after commiting can others see your changes.
+
+### Why does Git separate these two steps?
+Git separates these two steps to allow users more control over how they organise their gits. This allows you to avoid publishing lots of unrelated little changes alongside bigger chunks of progress. For example, if I compelted a bugfix in buggyfile.cs, but I also updated some documentation in readme.md, and refactored some code in a few other files, if I committed all these changes it would be a bit of a messy commit. Instead, I can just stage and commit the bugfix separetely, and finish up my refactoring/documentation work and commit that separately.
+
+### When would you want to stage changes without committing?
+You might want to stage changes without committing if you want to make sure all your changes are correct before publishing them. This allows you to review the changes and ensure they are what you intended before making them public.
