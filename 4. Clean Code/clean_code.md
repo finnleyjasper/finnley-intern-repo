@@ -312,3 +312,13 @@ The code is far more readable now the different pieces of logic are broken into 
 
 ### How can avoiding code smells make future debugging easier?
 Avoiding code smells makes debugging easier by ensuring logic is easy to follow and quick to read. Particularly, by renaming magic numbers to readable constants, this will reduce the necessary debugging by ensuring if these values change, one instance of them isn't accidently missed. Overall, avoiding code smells just leads to code that is quick to read and easy to understand, which means when debugging is necessary, it is much quicker to do.
+
+# Code Formatting and Style Guides
+### Why is code formatting important?
+Code formatting is improtant as it ensures thedevelopment team are all able to understnad the meanings behind names. For example, constants should be in ALLCAPS, while local variables should be lowercase, and functions should be named using camelCase. Standards such as these ensure code is readable and developers know the meanings of all names within a codebase. Additionally, formatting such as spaceing and tabbing makes code easy to read and speeds up development time by ensuring this.
+
+### What issues did the linter detect?
+The linter detected issues such as improper indentation and spacing that made code difficult to read.
+
+### Did formatting the code make it easier to read?
+Along with formatting, the linter made the code much easier to read.
