@@ -212,3 +212,103 @@ The original code had no logic for handling invalid input or edge cases. Users c
 
 ### How does handling errors improve reliability?
 By handling errors, you can prevent your application from crashing due to invalid input or unexpected edge cases. This improves the reliability of your application, as it can gracefully handle issues rather than breaking - for example, by providing informative error messages to users and allowing them to re-enter their input.
+
+# Overly-complicated code
+## Bad example
+```python
+def can_buy_ticket(user):
+    if user["age"] >= 18:
+        if user["has_id"] == True:
+            if user["banned"] == False:
+                return True
+            else:
+                return False
+        else:
+            return False
+    else:
+        return False
+```
+## Good example
+```python
+    def can_buy_ticket(user):
+        return user["age"] >= 18 and user["has_id"] and not user["banned"]
+```
+### What made the original code complex?
+The original code had many nested if statements and unnessary retuns. It is difficult to understand the logic and what varibale values lead to what outcomes.
+
+### How did refactoring improve it?
+The refactored code is now one line and very easy to understand; it is clear what conditions a user must meet to buy a ticket.
+
+# Code Smells
+
+## Bad example
+```python
+def process_purchase(user, items, is_member):
+    total = 0
+
+    # calculate total
+    for i in range(len(items)):
+        total = total + items[i]["price"] * items[i]["qty"]
+
+    # apply member discount
+    if is_member == True:
+        total = total * 0.9
+    else:
+        total = total
+
+    # shipping calculation
+    if total > 50:
+        shipping = 0
+    else:
+        shipping = 5
+
+    # duplicated shipping logic
+    if user["country"] != "Australia":
+        if total > 50:
+            shipping = 0
+        else:
+            shipping = 5
+
+    # random logging
+    print("USER:", user["name"])
+    print("TOTAL:", total)
+
+    # magic number tax
+    total = total * 1.1
+
+    return total + shipping
+```
+
+## Good example
+```python
+def process_purchase(user, items, is_member):
+    subtotal = calculate_total(items, is_member) * GST_RATE
+    total = subtotal + calculate_shipping()
+
+    return total
+
+def calculate_total(items):
+    total = 0
+    for i in range(len(items)):
+        total = total + items[i]["price"] * items[i]["qty"]
+
+    if is_member:
+        total = total * MEMBER_DISCOUNT
+
+    return total
+
+def calculate_shipping(total):
+    shipping = 0
+    if total <= 50:
+        shipping = 5
+    return shipping
+```
+
+### What code smells did you find in your code?
+The original code had duplicated shipping code, magic numbers for tax and member discount, unnecessary comments, and random logging that didn't fit with the rest of the function. The function also has multiple responsibilities, including logic that may be useful in other places of the program.
+
+### How did refactoring improve the readability and maintainability of the code?
+The code is far more readable now the different pieces of logic are broken into smaller modular functions. The magic numbers are now appropriately named constants, which makes this code much easier to understand for a new user. Unnecessary comments that just restate what can be easily understood from the code have been removed, which also improve readability. The random logging has been removed, as it doesn't fit with the rest of the function and would be better suited to be added in a different place if needed - such as a seperate function for debugging. Also, by refactoring the logic into modular functions, these pieces of logic can now be used elsewhere in the program without having to write duplicate code.
+
+### How can avoiding code smells make future debugging easier?
+Avoiding code smells makes debugging easier by ensuring logic is easy to follow and quick to read. Particularly, by renaming magic numbers to readable constants, this will reduce the necessary debugging by ensuring if these values change, one instance of them isn't accidently missed. Overall, avoiding code smells just leads to code that is quick to read and easy to understand, which means when debugging is necessary, it is much quicker to do.
