@@ -1,12 +1,15 @@
-var foo = 1
-let bar = foo
-bar = 9
+var cart = [
+    { name: "apple", price: 1, qty: 3 },
+    { name: "banana", price: 2, qty: 2 }
+]
 
-console.log(foo,bar)
-
-function addNumbers(a,b){
-    return a+b
+function calculateTotal(items){
+    var total = 0
+    for(var i=0;i<items.length;i++){
+        total = total + items[i]["price"]*items[i]["qty"]
+    }
+    return total
 }
 
-var result = addNumbers( 5,10 )
-console.log( "Result:",result )
+let totalPrice = calculateTotal( cart )
+console.log( "Total Price:",totalPrice )
