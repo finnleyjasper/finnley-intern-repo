@@ -322,3 +322,13 @@ The linter detected issues such as improper indentation and spacing that made co
 
 ### Did formatting the code make it easier to read?
 Along with formatting, the linter made the code much easier to read.
+
+# Unit Tests
+## Example test output
+![Test output screenshot](test_output.png)
+
+### How do unit tests help keep code clean?
+Unit tests help keep code clean by ensuring any bugs are caught quickly by running the unit tests. They may also disuade developers from having to include messy debugging messages in the main code, as the unit tests can instead include debug messaging and flags.
+
+### What issues did you find while testing?
+I found an issue with the final test I wrote, where the 'add' function was not producing the output expected by the test. This is a primitive example of a test flagging an unexpected outcome, as I wrote this test to fail, but it demonstrates how unit tests can flag issues quickly and effectively.
