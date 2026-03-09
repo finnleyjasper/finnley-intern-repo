@@ -332,3 +332,6 @@ Unit tests help keep code clean by ensuring any bugs are caught quickly by runni
 
 ### What issues did you find while testing?
 I found an issue with the final test I wrote, where the 'add' function was not producing the output expected by the test. This is a primitive example of a test flagging an unexpected outcome, as I wrote this test to fail, but it demonstrates how unit tests can flag issues quickly and effectively.
+
+
+# CD & CI
