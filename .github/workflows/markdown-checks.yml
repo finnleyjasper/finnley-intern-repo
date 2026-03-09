@@ -1,0 +1,17 @@
+name: Markdown Checks
+
+on: [pull_request]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: DavidAnson/markdownlint-cli2-action@v16
+        with:
+          globs: "**/*.md"
+
+      - uses: streetsidesoftware/cspell-action@v6
+        with:
+          files: "**/*.md"
