@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres
+    container_name: postgres-demo-3
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: testdb
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgres
+      - ./initdb:/docker-entrypoint-initdb.d
+
+volumes:
+  pgdata:

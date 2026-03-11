@@ -16,3 +16,5 @@ def test_add_strings():
 def test_bad_math(): # should fail
     result = add(1, 2)
     assert result == 4, "Result should be 4... if you're bad at math!"
+
+
