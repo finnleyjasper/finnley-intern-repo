@@ -1,22 +1,9 @@
 {
-  "name": "finnley-intern-repo",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/finnleyjasper/finnley-intern-repo.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/finnleyjasper/finnley-intern-repo/issues"
-  },
-  "homepage": "https://github.com/finnleyjasper/finnley-intern-repo#readme"
+  "lint-staged": {
+    "*.js": "eslint",
+    "*.md": "markdownlint"
+  }
 }

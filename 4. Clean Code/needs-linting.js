@@ -11,5 +11,15 @@ function calculateTotal(items){
     return total
 }
 
+var x = 1
+
+var unused = 5
+
+function hello() {
+  console.log("Hello world")
+}
+
+hello()
+
 let totalPrice = calculateTotal( cart )
 console.log( "Total Price:",totalPrice )

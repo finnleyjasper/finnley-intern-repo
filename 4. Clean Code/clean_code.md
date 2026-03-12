@@ -381,6 +381,8 @@ I found an issue with the final test I wrote, where the 'add' function was not p
 
 ![Github linting on PR output](auto-linting-on-PR.png)
 
+![Husky pre-commit chekcs](Husky-commit-output.png)
+
 ### What is the purpose of CI/CD?
 
 The purpose of CI/CD is to both streamline and bulletproof development. By ensuring automatic checks happen throughout development, mistakes and bugs are less likely to be introduced. With this robust approach, updates and new features can then be pushed to production without having to manually review changes, speeding up development and the delivery of new content to users.
