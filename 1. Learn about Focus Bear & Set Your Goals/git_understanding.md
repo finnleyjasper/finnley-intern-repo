@@ -1,5 +1,5 @@
 # Reflection
-The merge conflict I created was caused by conflicting text in this document.
+The merge conflict I created was caused by conflicting text in this document. Here is some conflicting text.
 
 I resolved it by navigating to VSCode from GitHub desktop and editing the problem file to remove the code that had been committed to main.
 
