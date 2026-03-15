@@ -60,7 +60,7 @@ As seen above, the refactored code is much easier to understand. The variable na
 
 # Functions
 
-## Bad example
+## Bad function example
 
 ```python
 def attack(attacker, victim, weapon):
@@ -86,7 +86,7 @@ def attack(attacker, victim, weapon):
         print("+10 points")
 ```
 
-## Good example
+## Refactored example
 
 ```python
 def attack(attacker, victim, weapon):
@@ -194,7 +194,7 @@ Comments should not be used as a substiute for good naming convections or code s
 
 # Errors and Edge Cases
 
-## Bad example
+## No error-handling example
 
 ```python
 def withdraw(account, amount):
@@ -210,7 +210,7 @@ def withdraw(account, amount):
         print("Warning: account is overdrawn")
 ```
 
-## Good example
+## Guard clause example
 
 ```python
 def withdraw(account, amount):
