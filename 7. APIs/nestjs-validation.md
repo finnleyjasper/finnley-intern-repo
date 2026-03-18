@@ -10,3 +10,9 @@ Built-in pipes handle simple and common validation needs - such as validating an
 
 ## How do decorators like @IsString() and @IsNumber() work with DTOs?
 These decorators work within DTO classes by establishing validation rules for each property.
+
+# Validation
+I used both the global validation pipe and custom DTOs to validate input when trying to add a new story to my news bulliten application - seen within the basic-project folder, under dto and within main.ts. The ValidationPipe uses whitelist which removes properties not defined on the DTO. I made DTOs for validating attempts to update and create new stories, which check data for properties such as headlines (string) and tone (enum). Below is an example of bad data being sent and the error message being return, shown through postman.
+
+![Error message](bad-request.png)
+
