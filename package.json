@@ -5,5 +5,9 @@
   "lint-staged": {
     "*.js": "eslint",
     "*.md": "markdownlint"
+  },
+  "dependencies": {
+    "@nestjs/class-validator": "^0.13.4",
+    "class-validator": "^0.15.1"
   }
 }

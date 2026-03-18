@@ -23,3 +23,7 @@ I created a simple newsroom bulletin that utilises CRUD endpoints to update stor
 ## Delete
 ![Delete endpoint](delete.png)
 
+# Validation
+I used both the global validation pipe and custom DTOs to validate input when trying to add a new story to my news bulliten application. The ValidationPupe uses whitelist which removes properties not defined on the DTO. I made DTOs for validating attempts to update and create new stories, which check data for properties such as headlines (string) and tone (enum). Below is an example of bad data being sent and the error message being return, shown through postman.
+
+![Error message](bad-request.png)
