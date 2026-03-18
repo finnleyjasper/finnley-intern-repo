@@ -17,3 +17,26 @@ More importantly however, Focus Bear's work aligns very closely with my values a
 I absolutely do; I am an autistic person, so I experience a lot of the issues Focus Bear aims to solve. Though I do not struggle so much with distractability and productivity, I do experience a lot of information overwhelm, executive dysfunction, and decision fatigue. Focus Bear's unique integration of wellbeing tools such as habit tracking with focus sessions directly aims to solve these issues I experience, where problems with executive dysfunction can be aided by setting up habtis for selfcare and management.
 
 Additionally, my partner of 5 years struggles with ADHD, so where I don't expereince a lot of the attention-related struggles Focus Bear aims to address, I can sympathise with these issues and have first-hand experience seeing how these struggles can affect someone in day-to-day life.
+
+
+# Using Focus Bear
+## Screenshots
+**Popup**
+![Popup](popup.png)
+When first using the app, I found it a bit confusing on what triggers this popup; It doesn't seem to follow any logic (to me at least). Sometimes when I go to open Focus Bear, the full application opens, and sometimes it is just this popup. I Also was confused on how to navigate to the main application when this popup opens. I now understand I can select one of the listed options and the full app will open, but I would prefer a dedicated "go to application" button or for the full app to open automatically.
+
+**Breaks**
+![Focus mode](focus.png)
+One of the features I really wanted to try using was the pomodoro timer while in focus mode. When I select "start focus session", the interface lets me choose how many minutes of breaks I want for the time I aim to focus for. However, throughout the session, I don't get any prompts to take a break, the session just extends for the full time I set. I still don't understand how to setup the pomodoro timer.
+
+**Tutorial**
+![Tutorial options](tutorial.png)
+When I first downloaded the app, I had wished there was a guided tutorial, as I felt quite lost. Upon exploring the app, I found the tutorials tab and selected the mac option. However, when I open the mac tutorial, it tells me I've already completed it. I don't remember seeing any tutorial - or perhaps I skipped it and forgot? Either way, I wish there was a way to retake the tutorial, as I still feel a bit lost navigating the application.
+
+**UI**
+![UI](ui.png)
+This is a very minor thing, but from a QA perspective, some of the UI seems a little unpolished. For example, having headings or content cut off, like the "level 6" seen above.
+
+**Focus Goal**
+![Focus goal](goal.png)
+Lastly, I am a bit confused with some of the options when starting a focus session. For example, how does my "focus goal" interact with my "current task"? Is it related to my to-dos? I feel like I needed an explicit explaination of these different terms and options to fully understand how each thing operates in the app.
