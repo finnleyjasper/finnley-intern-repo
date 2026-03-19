@@ -7,3 +7,14 @@ Interceptors are used instead of middleware when you need to handle or transform
 
 ## How does LoggerErrorInterceptor help?
 A LoggerErrorInterceptor is a reusable, modular component that can be applied to multiple routes, controllers, or globally to consistently handle error logging. It helps separate concerns like logging from business logic, thus improving code maintainability.
+
+### Implementing interceptors and middleware
+**Logger interceptor**
+In my basic-project application, I implemented a simple logging interceptor globally in main.ts - SimpleLoggingInterceptor(). This applies to the whole app and logs request method and URL, request body, params and query, and response data. The terminal output is as follows:
+
+![Logger output](logger-output.png)
+
+**Middleware**
+I created a piece of middleware which just creates a log to the terminal when POST /stories or DELETE /stories/:id is hit. Below is the logging output when the later endpoint is hit:
+
+[DELETE output](middleware.png)
