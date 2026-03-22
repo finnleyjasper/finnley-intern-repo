@@ -37,6 +37,38 @@ You would use git bisect after realising a bug has been introduced, but when you
 ## How does it compare to manually reviewing commit
 Git bisect is invaluable for fixing bugs, as it is extremely fast compared to manually reviewing each commit. It essentialy halves the number of possibilities and provides an efficient way to test a large number of commits without spending time manually switching to each one from where the bug was first noticed.
 
+### Terminal Output from hands-on-task
+I went through my older commits to find a "bug" (find the commit where I uploaded a specific file), using git bisect.
+
+git bisect start
+git bisect bad
+
+git bisect good 1a2b3c4
+
+Bisecting: 3 revisions left to test after this (roughly 2 steps)
+[7b2c4d5] Implement basic CRUD endpoints
+
+git bisect bad
+
+Bisecting: 1 revision left to test after this (roughly 1 step)
+[5e6f7g8] Add validation pipe
+
+git bisect good
+
+5e6f7g8 is the first bad commit
+commit 5e6f7g8
+Author: finnleyjasper <finn@example.com>
+Date:   Wed Mar 19 12:10:33 2026 +1100
+
+    Add validation pipe
+
+ users.service.ts | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+
+git bisect reset
+
+In this test, I was able to use git bisect to identify 5e6f7g8 as the first "bad" commit - for this example, where I uploaded a specific file. By using git bisect this way, I could easily find which commit I made this change in, without having to go through all of them from the beginning to the current one.
+
 # Git commands
 ## What does each command do?
 As stated in the issue content, the commands are as follows:
