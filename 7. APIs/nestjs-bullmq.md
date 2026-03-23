@@ -19,3 +19,11 @@ I also needed to add a Redis container to my docker-compose.yml file.
 Below is the JSON response and logs when using the above end point to trigger the job and execute it through the queue.
 
 [Job output](job.png)
+
+Redis stores and manages queued jobs in this project with the following task flow:
+- The controller calls the queue service
+- BullMQ adds a job to demo-queue with BackgroundTaskService
+- BullMQ writes that job into Redis
+- The BullMQ worker reads the next waiting job from Redis
+- The processor DemoQueueProcessor runs the job
+- BullMQ updates the job state in Redis
