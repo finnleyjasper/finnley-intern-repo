@@ -10,3 +10,13 @@ To restrict access to an API endpoint based on user roles in NestJS, you can use
 
 ## What are the security risks of improper authorization, and how can they be mitigated?
 Improper authorization can lead to unauthorized data access, privilege escalation, resource tampering, and regulatory violations. To mitigate these risks, you can implement centralised role-based access control and validate permissions on every request. You should include roles/permissions in server-verified tokens, enforce least privilege, and log sensitive actions for auditing.
+
+# Tasks
+## Explore how to retrieve user roles from Auth0’s access token
+This is done by adding an action in Auth0 that executes after a sign-in that injects "roles" into the information carried by the token, which can be used in an application to check for roles a user has.
+
+## Implement a NestJS guard to enforce role-based authorization
+I have implemented a NestJS guard to enforce role-based authorization in my nestjs-auth0-api project, in authorization.guards.ts. This guard checks that the user has the "admin" role, and will only allow them access to the /protected endpoint if they have "admin".
+
+## Protect an API endpoint based on user roles (e.g., allow only admins to access it)
+Only those with the "admin" role can access the /protected endpoint.
