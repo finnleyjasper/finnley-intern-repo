@@ -17,5 +17,11 @@ To structure a Bruno collection for a NestJS backend, you should mirror how your
 
 # Tasks
 ## A simple public NestJS API endpoint
+Testing a simple endpoint in Bruno from my nestjs-auth0-api project.
+![Bruno output](bruno.png)
+
 
 ## Passing headers and authentication tokens in Bruno
+Testing a protected endpoint in Bruno from my nestjs-auth0-api project by passing the Bearer token in Auth.
+![Protected endpoint](protected.png)
+
